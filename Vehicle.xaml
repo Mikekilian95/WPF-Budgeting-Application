@@ -1,0 +1,142 @@
+﻿<Window x:Class="FinalPOE.Vehicle"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalPOE"
+        mc:Ignorable="d"
+        Title="Vehicle" Height="650" Width="400">
+
+
+    <Border  Padding="10">
+        <StackPanel Margin="0,2,0,-2">
+
+            <!--Vehicle message-->
+            <TextBlock Text="Buying a Vehicle" 
+                       FontWeight="Bold" 
+                       Margin="0 10"
+                       FontSize="16"
+                       Background="AliceBlue"
+                       Foreground="Teal"
+                       Padding="10"
+                       TextAlignment="Center"/>
+
+            <!--Model-->
+            <TextBlock Text="What is the Model and Make of the vehicle"
+                       Padding="2"
+                       Margin="0,20,0,0"/>
+
+            <TextBox 
+                x:Name="userModelMake"
+                FontSize="13"               
+                TextWrapping="Wrap"
+                Padding="2"
+                Background="AliceBlue"
+                Foreground="Black"
+                Text="" 
+                Height="25"
+                Margin="0,0,150,0"
+                />
+
+
+            <!--Purchase Price-->
+            <TextBlock Text="Please enter the Purchase Price of the vehicle (ZAR)"
+                       Padding="2"
+                       Margin="0,20,0,0"/>
+
+            <TextBox 
+                x:Name="userVehiclePrice"
+                FontSize="13"               
+                TextWrapping="Wrap"
+                Padding="2"
+                Background="AliceBlue"
+                Foreground="Black"
+                Text="" 
+                Height="25"
+                Margin="0,0,150,0"
+                />
+
+
+            <!--Deposit-->
+            <TextBlock Text="Please enter the Total Deposit (ZAR)"
+                       Padding="2"
+                       Margin="0,20,0,0"/>
+
+            <TextBox 
+                x:Name="userVehicleDeposit"
+                FontSize="13"               
+                TextWrapping="Wrap"
+                Padding="2"
+                Background="AliceBlue"
+                Foreground="Black"
+                Text="" 
+                Height="25"
+                Margin="0,0,150,0"
+                />
+
+
+            <!--Interest Rate-->
+            <TextBlock Text="Please enter the Interest Rate (%)"
+                       Padding="2"
+                       Margin="0,20,0,0"/>
+
+            <TextBox 
+                x:Name="userVehicleIntRate"
+                FontSize="13"               
+                TextWrapping="Wrap"
+                Padding="2"
+                Background="AliceBlue"
+                Foreground="Black"
+                Text="" 
+                Height="25"
+                Margin="0,0,290,0"
+                />
+
+            <!--Insurance premium-->
+            <TextBlock Text="Please enter the Estimated Insurance Premium (ZAR)"
+                       Padding="2"
+                       Margin="0,20,0,0"/>
+
+            <TextBox 
+                x:Name="userInsurancePremium"
+                FontSize="13"               
+                TextWrapping="Wrap"
+                Padding="2"
+                Background="AliceBlue"
+                Foreground="Black"
+                Text="" 
+                Height="25"
+                Margin="0,0,150,0"
+                />
+
+
+            <!--Text block to tell user to first click the Submit button to store values, and then the Close button to exit the window-->
+            <TextBlock Text="Please click 'Submit' to store the values, and then 'Close' to exit the window"
+                       Padding="2"
+                       FontSize="9.5"
+                       TextAlignment="Center"
+                       Margin="0,50,0,0"/>
+            
+            
+            <!--Submit and Cancel Button-->
+            <Button 
+                    x:Name="Submit_Vehicle"
+                    Content="Submit"
+                    Margin="150,20,150,0" Click="Submit_Vehicle_Click"
+                    />
+
+            <Button x:Name="Close_Vehicle" Content="Close"
+                    Margin="150,10,150,0" Click="Close_Vehicle_Click"
+                    />
+
+
+
+
+
+
+
+
+        </StackPanel>
+    </Border>
+
+</Window>

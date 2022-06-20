@@ -1,0 +1,124 @@
+﻿<Window x:Class="FinalPOE.Buying"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalPOE"
+        mc:Ignorable="d"
+        Title="Buying" Height="550" Width="400">
+
+
+    <Border  Padding="10">
+        <StackPanel Margin="0,2,0,-2">
+            
+            
+
+            <!--Buying a property message-->
+            <TextBlock Text="Buying a Property" 
+                       FontWeight="Bold" 
+                       Margin="0 10"
+                       FontSize="16"
+                       Background="AliceBlue"
+                       Foreground="Teal"
+                       Padding="10"
+                       TextAlignment="Center"/>
+
+
+            <!--Purchase price of property-->
+            <TextBlock Text="Please enter the purchase price of the property (ZAR) "
+                       Padding="2"
+                       Margin="0,20,0,0"/>
+            <TextBox 
+                x:Name="userPropertyPrice"
+                FontSize="13"               
+                TextWrapping="Wrap"
+                Padding="2"
+                Background="AliceBlue"
+                Foreground="Black"
+                Text="" 
+                Height="25"
+                Margin="0,0,220,0"
+                />
+
+
+            <!--Total Deposit-->
+            <TextBlock Text="Please enter the total deposit of the property (ZAR) "
+                       Padding="2"
+                       Margin="0,20,0,0"/>
+
+            <TextBox 
+                x:Name="userPropertyDeposit"
+                FontSize="13"               
+                TextWrapping="Wrap"
+                Padding="2"
+                Background="AliceBlue"
+                Foreground="Black"
+                Text="" 
+                Height="25"
+                Margin="0,0,220,0"
+                />
+
+
+
+            <!--Interest rate-->
+            <TextBlock Text="Please enter the interest rate (%) "
+                       Padding="2"
+                       Margin="0,20,0,0"/>
+
+            <TextBox 
+                x:Name="userPropertyIntRate"
+                FontSize="13"               
+                TextWrapping="Wrap"
+                Padding="2"
+                Background="AliceBlue"
+                Foreground="Black"
+                Text="" 
+                Height="25"
+                Margin="0,0,290,0"
+                />
+
+
+            <!--Number of months-->
+            <TextBlock Text="How many months will it take to repay the loan (Between 240 - 360)"
+                       Padding="2"
+                       Margin="0,20,0,0"/>
+
+            <TextBox 
+                x:Name="userMonthstoRepay"
+                FontSize="13"               
+                TextWrapping="Wrap"
+                Padding="2"
+                Background="AliceBlue"
+                Foreground="Black"
+                Text="" 
+                Height="25"
+                Margin="0,0,290,0"
+                />
+
+
+            <!--Text block to tell user to first click the Submit button to store values, and then the Close button to exit the window-->
+            <TextBlock Text="Please click 'Submit' to store the values, and then 'Close' to exit the window"
+                       Padding="2"
+                       FontSize="8.5"
+                       TextAlignment="Center"
+                       Margin="0,50,0,0"/>
+
+            <!--Submit and Cancel Button-->
+            <Button x:Name="Submit_Buying" Content="Submit"
+                    Margin="150,20,150,0" Click="Submit_Buying_Click"
+                    />
+
+            <Button x:Name="Close_Buying" Content="Close"
+                    Margin="150,10,150,0" Click="Close_Buying_Click"
+                    />
+
+
+
+
+
+
+
+
+        </StackPanel>
+    </Border>
+</Window>
